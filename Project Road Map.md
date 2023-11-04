@@ -8,6 +8,7 @@
 - [x] Research and explore to find existing Python code related to our project *try to read the code and attempt to run it yourself*. 
 1. https://github.com/ycq091044/MedCodeMap
 2. https://github.com/GGWPXXXX/Pharmalyst *this code specifically has data including a list of medications and their descriptions - which will be useful for our software*. 
+3. https://github.com/ahmedshahriar/bd-medicine-scraper.git
 
 # Sprint 2 
 - [ ] Ensure that the team is making necessary commits to KSU organization and that we maintain control of our code.
