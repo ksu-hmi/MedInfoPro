@@ -12,10 +12,10 @@
 
 # Sprint 2 
 - [ ] Ensure that the team is making necessary commits to KSU organization and that we maintain control of our code.
-- [ ] Each person should have committed at least 6 code changes of significant size *each commit should include a comment that SPECIFICALLY explains what you did*.
+- [ ] Each person should have committed at least 6 code changes of significant size *Each commit should include a comment that SPECIFICALLY explains what you did*.
 - [ ] Keep track of planned and emerging tasks in your ProjectRoadMap.md document and assign each task to the team member who completed it. 
 
 # Sprint 3 
 - [ ] Continue coding and refining. 
 - [ ] Test code - fix errors or bugs. 
-- [ ] Create one PowerPoint slide introducing our project and upload it to D2L. *each team member must upload PP to their own D2L*
+- [ ] Create one PowerPoint slide introducing our project and upload it to D2L. *Each team member must upload PP to their own D2L*
