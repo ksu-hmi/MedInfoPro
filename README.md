@@ -7,4 +7,4 @@ WE WILL NEED TO ALSO PLACE INSTRUCTIONS HERE ON HOW TO USE OUR CODE
 This projest is licesnsed under the MIT license - see the [LICENSE](LICENSE) file for the details.
 
 # Acknowlegdements
-: Inspiration for this project
+-  [pharmalyst](https://github.com/GGWPXXXX/Pharmalyst): Inspiration for this project
