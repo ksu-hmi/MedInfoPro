@@ -8,3 +8,9 @@ This projest is licesnsed under the MIT license - see the [LICENSE](LICENSE) fil
 
 # Acknowlegdements
 -  [pharmalyst](https://github.com/GGWPXXXX/Pharmalyst): Inspiration for this project
+
+# Contributers
+Joy Ihedioha (https://github.com/jihedio1)
+Kalyn Simmons (https://github.com/ksimm045)
+Carter Hughes (https://github.com/cgh10)
+Jayline Paniagua (https://github.com/pjayline)
