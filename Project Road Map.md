@@ -14,7 +14,10 @@
 - [ ] Ensure that the team is making necessary commits to KSU organization and that we maintain control of our code.
 - [ ] Each person should have committed at least 6 code changes of significant size *Each commit should include a comment that SPECIFICALLY explains what you did*.
 - [ ] Keep track of planned and emerging tasks in your ProjectRoadMap.md document and assign each task to the team member who completed it. 
-
+ - Kayln's Role: Find, clean, and manipulate Medication Dataset
+ * Carter's Role: Import dataset into Python in a code ready state
+ + Joy's Role: Create main repository to start coding MedInfoPro form and update Sprint 2 tasks and responsibilites
+ + All Teammates' Role: Creating code
 # Sprint 3 
 - [ ] Continue coding and refining. 
 - [ ] Test code - fix errors or bugs. 
