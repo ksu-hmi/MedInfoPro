@@ -17,4 +17,11 @@ fileName='csv or excel file name'
 filePath=r'C:\Users\Carter\Downloads'
 file=os.path.join(filePath,fileName) 
 
+## Read the Excel file into a Pandas DataFrame ##
+df = pd.read_excel(excel_file_path)
+## or this  ##
+df=pd.read_csv(file) 
+## pd.read depends on how the file is brought into pandas##
 
+## Display the DataFrame ##
+print(df)
