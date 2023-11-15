@@ -1,6 +1,6 @@
 ## Main Code Page for MEDINFOPRO ##
-## Instal Pandas ##
-pip install pandas
+## Install Pandas ##
+
 
 ## Import data set ##
 import pandas as pd
@@ -8,13 +8,13 @@ import pandas as pd
 import os
 
 ## Specify the file path to define excel_file_path ##
-excel_file_path = 'path/to/your/excel/file.xlsx'
+excel_file_path = './Data/DataSet/Medicine_description.xlsx'
 
 ## OR ##
 
 ## Create file name and path then join ##
 fileName='csv or excel file name'
-filePath=r'C:\Users\Carter\Downloads'
+filePath=r'./Data/DataSet/Medicine_description.csv'
 file=os.path.join(filePath,fileName) 
 
 ## Read the Excel file into a Pandas DataFrame ##
