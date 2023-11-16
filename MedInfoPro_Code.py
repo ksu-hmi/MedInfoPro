@@ -49,10 +49,11 @@ class MedInfoProInterface:
         drug_interactions = "Potential Drug Interactions: Information about potential drug interactions."
         side_effects = "Side Effects: Information about side effects."
         price_details = "Price Details: Information about the cost of the medication."
+        total_price = "Total Cost: Quantity patient submited x price details to get total patient cost"
 
 
         # Append additional fields to the result
-        result += f"{medication_info}\n{drug_interactions}\n{side_effects}\n{price_details}"
+        result += f"{medication_info}\n{drug_interactions}\n{side_effects}\n{price_details}\n{total_price}"
 
         # Show a message box with the result
         messagebox.showinfo("MedInfoPro Result", result)
