@@ -37,10 +37,20 @@ class MedInfoProInterface:
         medication = self.entry_medication.get()
 
         # Perform some action with the input (you can replace this with your logic)
-        result = f"Patient Name: {name}\nDate of Birth: {dob}\nMedication Name: {medication}"
+        result = f"Patient Name: {name}\nDate of Birth: {dob}\nMedication Name: {medication}\n\n"
+
+        # Additional fields
+        medication_info = "Medication Information: Some information about the medication."
+        drug_interactions = "Potential Drug Interactions: Information about potential drug interactions."
+        side_effects = "Side Effects: Information about side effects."
+        cost_details = "Cost Details: Information about the cost of the medication."
+
+        # Append additional fields to the result
+        result += f"{medication_info}\n{drug_interactions}\n{side_effects}\n{cost_details}"
 
         # Show a message box with the result
         messagebox.showinfo("MedInfoPro Result", result)
+
 
 # Create the main application window
 root = tk.Tk()
