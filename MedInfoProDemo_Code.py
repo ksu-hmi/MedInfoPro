@@ -59,14 +59,36 @@ class MedInfoProInterface:
         side_effects = self.med_dict.get(medication, {}).get("Side Effects", "Information not available")
         price_details = self.med_dict.get(medication, {}).get("Price Details", "Information not available")
 
+        # Calculate total price
+        total_price = "Total Cost: Quantity patient submitted x price details to get total patient cost"
+
+        # Perform some action with the input (you can replace this with your logic)
+        result = f"Patient Name: {name}\nDate of Birth: {dob}\nMedication Name: {medication}\nQuantity: {quantity}\n\n"
+        result += f"{medication_info}\n{drug_interactions}\n{side_effects}\n{price_details}\n{total_price}"
+       
         # Show a message box with the result
         messagebox.showinfo("MedInfoPro Result", result)
 
+# Sample DataFrame
+sample_data = {
+    "Medication1": {
+        "Medication Information": "Info for Medication1",
+        "Potential Drug Interactions": "Interactions for Medication1",
+        "Side Effects": "Side effects for Medication1",
+        "Price Details": "Price details for Medication1"
+    },
+    "Medication2": {
+        "Medication Information": "Info for Medication2",
+        "Potential Drug Interactions": "Interactions for Medication2",
+        "Side Effects": "Side effects for Medication2",
+        "Price Details": "Price details for Medication2"
+    }
+}
 
 # Create the main application window
 root = tk.Tk()
 
-# Instantiate the interface
+# Instantiate the interface with the dictionary
 med_info_pro_interface = MedInfoProInterface(root, med_dict)
 
 # Run the application
