@@ -15,7 +15,7 @@
 - [ ] Each person should have committed at least 6 code changes of significant size *Each commit should include a comment that SPECIFICALLY explains what you did*.
 - [ ] Keep track of planned and emerging tasks in your ProjectRoadMap.md document and assign each task to the team member who completed it. 
  - Kayln's Role: Find, clean, and manipulate Medication Dataset, build Tkinter interface
- * Carter's Role: Import dataset into Python in a code ready state, start coding for quantity/price check out system
+ * Carter's Role: Import dataset into Python in a code ready state, start coding for quantity/price check out system- DONE, Dataset has been imported but I have changed the code for quantity/price as we are having trouble calling the excel file to match the user input
  + Joy's Role: Create main repository to start coding MedInfoPro form, update Sprint 2 tasks and responsibilites, build code for medication/category/description
  Jayline's Role: Create code for side effects and drug interactions
  + All Teammates' Role: Creating code
