@@ -19,17 +19,18 @@ class MedicationRepository:
         self.__db = pd.read_excel(excel_file_path)
 
         ## define functions for interface ##
-    def get_quantity_and_price(self) -> list[Medication]: 
-        drug_name_to_search = self.entry.get()
+    def __init__(self, excel_file_path):
+        # Load the Excel dataset into a pandas DataFrame
+        self.medication_data = pd.read_excel(excel_file_path)
 
-        # Use the Medication class to retrieve quantity and price
-        result = get_quantity_and_price(drug_name_to_search, medication_list)
+    def get_medication_info(self, medication_name):
+        # Retrieve information from the DataFrame based on the medication name
+        medication_info = self.medication_data.loc[
+            self.medication_data['Medication Name'] == medication_name, 'Information'].values
 
-        # Display the result in a messagebox
-        if result is not None:
-            quantity, price = result
-            messagebox.showinfo("Medication Info", f"Drug: {drug_name_to_search}\nQuantity: {quantity}\nPrice: ${price}")
+        if len(medication_info) > 0:
+            return medication_info[0]
         else:
-            messagebox.showwarning("Medication Info", f"{drug_name_to_search} not found in the medication list")
+            return "Information not available for this medication."
 
         
