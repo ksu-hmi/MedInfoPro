@@ -23,3 +23,4 @@
 - [ ] Continue coding and refining. 
 - [ ] Test code - fix errors or bugs. 
 - [ ] Create one PowerPoint slide introducing our project and upload it to D2L. *Each team member must upload PP to their own D2L*
+- [ ] Jayline's Role: Create Powerpoint.
