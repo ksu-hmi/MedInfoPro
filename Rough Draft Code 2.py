@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import pandas as pd
-
+import Medication as Medication
 
 class MedInfoProInterface:
     def __init__(self, master,medication_repository):
@@ -49,14 +49,14 @@ class MedInfoProInterface:
         # Get user input
         name = self.entry_name.get()
         dob = self.entry_dob.get()
-        medication_name = self.entry_medication.get()
+        drug_name = self.entry_medication.get()
         quantity = self.entry_quantity.get()
 
         # Look up medication information from the loaded CSV file
-        medication_info = self.medication_repository.get_medication_info(medication_name)
+        medication_info = self.medication_repository.get_medication_info(drug_name)
 
         # Perform some action with the input (you can replace this with your logic)
-        result = f"Patient Name: {name}\nDate of Birth: {dob}\nMedication Name: {medication_name}\nQuantity: {quantity}\n\n"
+        result = f"Patient Name: {name}\nDate of Birth: {dob}\nMedication Name: {drug_name}\nQuantity: {quantity}\n\n"
 
         # Append addictional fields to the result
         result += f"Medication Information: {medication_info}\n"
@@ -83,24 +83,31 @@ class MedicationRepository:
         # Load the Excel dataset into a pandas DataFrame
         self.medication_data = pd.read_excel(excel_file_path)
 
-    def get_medication_info(self, medication_name):
+    def get_medication_info(self, drug_name):
         # Retrieve information from the DataFrame based on the medication name
         medication_info = self.medication_data.loc[
-            self.medication_data['Medication Name'] == medication_name, 'Information'].values
+            self.medication_data['Medication Name'] == drug_name, 'Information'].values
 
         if len(medication_info) > 0:
             return medication_info[0]
         else:
             return "Information not available for this medication."
         
-    def get_medication_info(self, medication_name):
+    def get_medication_info(self, drug_name):
         print("Column names:", self.medication_data.columns)
 
-        try:
-            return self.medication_data[self.medication_data['Medication Name'] == medication_name]
-        except KeyError:
-            print(f"Error: Column 'Medication Name' not found in DataFrame.")
-            return pd.DataFrame()
+        if 'Drug_Name' in self.medication_data.columns:
+            try:
+                return self.medication_data[self.medication_data['Drug_Name'] == drug_name]
+            except KeyError:
+                print(f"Error: Column 'Drug_Name' found, but an error occurred during filtering.")
+        else:
+            print(f"Error: Column 'Drug_Name' not found in DataFrame.")
+
+        return pd.DataFrame()
+
+
+
 
 
 # Create the main application window
