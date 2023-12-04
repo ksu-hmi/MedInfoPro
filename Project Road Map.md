@@ -11,16 +11,17 @@
 3. https://github.com/ahmedshahriar/bd-medicine-scraper.git
 
 # Sprint 2 
-- [ ] Ensure that the team is making necessary commits to KSU organization and that we maintain control of our code.
-- [ ] Each person should have committed at least 6 code changes of significant size *Each commit should include a comment that SPECIFICALLY explains what you did*.
-- [ ] Keep track of planned and emerging tasks in your ProjectRoadMap.md document and assign each task to the team member who completed it. 
+- [x] Ensure that the team is making necessary commits to KSU organization and that we maintain control of our code.
+- [x] Each person should have committed at least 6 code changes of significant size *Each commit should include a comment that SPECIFICALLY explains what you did*.
+- [x] Keep track of planned and emerging tasks in your ProjectRoadMap.md document and assign each task to the team member who completed it. 
  - Kayln's Role: Find, clean, and manipulate Medication Dataset, build Tkinter interface
  * Carter's Role: Import dataset into Python in a code ready state, start coding for quantity/price check out system- DONE, Dataset has been imported but I have changed the code for quantity/price as we are having trouble calling the excel file to match the user input
  + Joy's Role: Create main repository to start coding MedInfoPro form, update Sprint 2 tasks and responsibilites, build code for medication/category/description
  Jayline's Role: Create code for side effects and drug interactions
  + All Teammates' Role: Creating code
 # Sprint 3 
-- [ ] Continue coding and refining. 
-- [ ] Test code - fix errors or bugs. 
-- [ ] Create one PowerPoint slide introducing our project and upload it to D2L. *Each team member must upload PP to their own D2L*
-- [ ] Jayline's Role: Create Powerpoint.
+- [x] Continue coding and refining. 
+- [x] Test code - fix errors or bugs. 
+- [x] Create one PowerPoint slide introducing our project and upload it to D2L. *Each team member must upload PP to their own D2L*
+- [x] Jayline and Kalyn's Role: Create Powerpoint.
+- [x] Team presents presentation in Teams 
